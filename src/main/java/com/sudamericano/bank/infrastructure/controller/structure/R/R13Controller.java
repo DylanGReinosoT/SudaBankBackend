@@ -1,16 +1,14 @@
 package com.sudamericano.bank.infrastructure.controller.structure.R;
 
-import com.sudamericano.bank.domain.model.catalog.T2Dto;
 import com.sudamericano.bank.domain.model.catalog.T43Dto;
 import com.sudamericano.bank.domain.model.catalog.T44Dto;
 import com.sudamericano.bank.domain.model.structure.R.R13Dto;
 import com.sudamericano.bank.domain.ports.inputs.catalog.CatalogT4UseCase;
-import com.sudamericano.bank.domain.ports.inputs.catalog.T2UseCase;
 import com.sudamericano.bank.domain.ports.inputs.catalog.T43UseCase;
 import com.sudamericano.bank.domain.ports.inputs.catalog.T44UseCase;
 import com.sudamericano.bank.domain.ports.inputs.structure.R.R13UseCase;
 import com.sudamericano.bank.infrastructure.outputs.ResponseDTO;
-import com.sudamericano.bank.infrastructure.outputs.structure.R13ResumeResponse;
+import com.sudamericano.bank.infrastructure.outputs.structure.R.resume.R13ResumeResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 

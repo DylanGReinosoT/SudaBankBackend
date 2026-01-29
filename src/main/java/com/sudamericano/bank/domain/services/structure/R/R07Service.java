@@ -3,7 +3,6 @@ package com.sudamericano.bank.domain.services.structure.R;
 import com.sudamericano.bank.domain.model.structure.R.R07Dto;
 import com.sudamericano.bank.domain.ports.inputs.structure.R.R07UseCase;
 import com.sudamericano.bank.domain.ports.outputs.structure.R.R07Port;
-import com.sudamericano.bank.infrastructure.outputs.structure.R07ResumeResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
