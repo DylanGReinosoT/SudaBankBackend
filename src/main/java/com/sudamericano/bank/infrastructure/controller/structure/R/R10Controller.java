@@ -11,7 +11,7 @@ import com.sudamericano.bank.domain.ports.inputs.catalog.T41UseCase;
 import com.sudamericano.bank.domain.ports.inputs.catalog.T41_AUseCase;
 import com.sudamericano.bank.domain.ports.inputs.structure.R.R10UseCase;
 import com.sudamericano.bank.infrastructure.outputs.ResponseDTO;
-import com.sudamericano.bank.infrastructure.outputs.structure.R10ResumeResponse;
+import com.sudamericano.bank.infrastructure.outputs.structure.R.resume.R10ResumeResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 

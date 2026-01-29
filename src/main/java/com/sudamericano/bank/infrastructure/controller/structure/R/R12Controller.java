@@ -4,7 +4,7 @@ import com.sudamericano.bank.domain.model.structure.R.R12Dto;
 import com.sudamericano.bank.domain.ports.inputs.catalog.CatalogT4UseCase;
 import com.sudamericano.bank.domain.ports.inputs.structure.R.R12UseCase;
 import com.sudamericano.bank.infrastructure.outputs.ResponseDTO;
-import com.sudamericano.bank.infrastructure.outputs.structure.R12ResumeResponse;
+import com.sudamericano.bank.infrastructure.outputs.structure.R.resume.R12ResumeResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 

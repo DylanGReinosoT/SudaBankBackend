@@ -1,7 +1,6 @@
 package com.sudamericano.bank.domain.ports.inputs.structure.L;
 
 import com.sudamericano.bank.domain.model.structure.L.L02Dto;
-import com.sudamericano.bank.infrastructure.outputs.structure.L02ResumeResponse;
 
 import java.util.List;
 
