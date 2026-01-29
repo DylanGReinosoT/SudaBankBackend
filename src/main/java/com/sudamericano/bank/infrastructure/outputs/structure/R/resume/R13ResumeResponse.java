@@ -1,10 +1,9 @@
-package com.sudamericano.bank.infrastructure.outputs.structure;
+package com.sudamericano.bank.infrastructure.outputs.structure.R.resume;
 
 import com.sudamericano.bank.infrastructure.outputs.ResponseDTO;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Getter

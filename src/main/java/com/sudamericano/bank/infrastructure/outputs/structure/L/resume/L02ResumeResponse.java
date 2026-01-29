@@ -1,11 +1,10 @@
-package com.sudamericano.bank.infrastructure.outputs.structure;
+package com.sudamericano.bank.infrastructure.outputs.structure.L.resume;
 
 import com.sudamericano.bank.infrastructure.outputs.ResponseDTO;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Getter
 @Setter
