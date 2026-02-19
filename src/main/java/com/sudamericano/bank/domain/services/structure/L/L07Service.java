@@ -3,9 +3,10 @@ package com.sudamericano.bank.domain.services.structure.L;
 import com.sudamericano.bank.domain.model.structure.L.L07Dto;
 import com.sudamericano.bank.domain.ports.inputs.structure.L.L07UseCase;
 import com.sudamericano.bank.domain.ports.outputs.structure.L.L07Port;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class L07Service implements L07UseCase {
 
     private final L07Port port;
