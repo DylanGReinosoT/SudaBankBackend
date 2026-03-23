@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface T66UseCase {
     List<T66Dto> findAll();
+    T66Dto findById(Integer id);
 }

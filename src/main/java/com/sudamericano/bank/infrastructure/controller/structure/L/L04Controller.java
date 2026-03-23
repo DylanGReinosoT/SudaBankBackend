@@ -23,9 +23,6 @@ public class L04Controller {
     public L04Controller(L04UseCase useCase,
                          CatalogT4UseCase catalogT4UseCase,
                          T164UseCase t164UseCase,
-                         T165UseCase t165UseCase,
-                         T166UseCase t166UseCase,
-                         T62AUseCase t62AUseCase,
                          T170UseCase t170UseCase) {
         this.useCase = useCase;
         this.catalogT4UseCase = catalogT4UseCase;
@@ -75,6 +72,42 @@ public class L04Controller {
         }
         return  resumes;
     }
+
+    @GetMapping("/report")
+    public List<L04ResumeResponse> getAllReport() {
+        List<L04ResumeResponse> reports = new java.util.ArrayList<>(List.of());
+
+        for (L04Dto dto : useCase.findAll()) {
+            L04ResumeResponse report = new L04ResumeResponse();
+            catalogT4UseCase.getAllCatalogT4().stream().filter(x -> x.getId() == (dto.getCodigoTipoIdentificacion()))
+                    .findFirst()
+                    .ifPresent(catalogT4 -> report.setTipoIdentificacion(
+                            new ResponseDTO(catalogT4.getId(), catalogT4.getDescripcion())
+                    ));
+
+            T164Dto emisor = t164UseCase.findById(dto.getCodigoEmisor());
+            if (emisor != null) {
+                report.setEmisor(new ResponseDTO(emisor.getId(), emisor.getDescripcion()));
+            }
+
+            report.setNumeroTitulo(dto.getNumeroTitulo());
+            report.setFechaEmision(dto.getFechaEmision());
+            report.setFechaCompra(dto.getFechaCompra());
+            report.setCuentaOrigen(dto.getCuentaOrigen());
+            report.setValorLibrosCuentaOrigen(dto.getValorLibrosCuentaOrigen());
+            report.setValorLibrosCuentaDestino(dto.getValorLibrosCuentaDestino());
+            report.setFechaTransferencia(dto.getFechaTransferencia());
+
+            T170Dto motivoTransferencia = t170UseCase.findById(dto.getCodigoMotivoTransferencia());
+            if (motivoTransferencia != null) {
+                report.setMotivoTransferencia(new ResponseDTO(motivoTransferencia.getId(), motivoTransferencia.getDescripcion()));
+            }
+
+            reports.add(report);
+        }
+        return reports;
+    }
+
 
     @GetMapping("/{id}")
     public L04Dto getById(@PathVariable Long id) {

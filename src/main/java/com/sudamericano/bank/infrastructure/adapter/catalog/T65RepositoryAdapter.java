@@ -26,4 +26,11 @@ public class T65RepositoryAdapter implements T65RepositoryPort {
                 .map(mapper::toDto)
                 .toList();
     }
+
+    @Override
+    public T65Dto findById(Integer id) {
+        return repository.findById(id)
+                .map(mapper::toDto)
+                .orElse(null);
+    }
 }
