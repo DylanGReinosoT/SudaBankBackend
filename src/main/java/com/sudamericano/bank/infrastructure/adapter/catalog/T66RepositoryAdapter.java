@@ -26,4 +26,11 @@ public class T66RepositoryAdapter implements T66RepositoryPort {
                 .map(mapper::toDto)
                 .toList();
     }
+
+    @Override
+    public T66Dto findById(Integer id) {
+        return repository.findById(id)
+                .map(mapper::toDto)
+                .orElse(null);
+    }
 }

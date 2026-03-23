@@ -80,10 +80,10 @@ public class L06Entity {
     private Integer codigoCalificadoraRiesgo;
 
     @Column(name = "CODIGO_TIPO_IDENTIFICACION_CUSTODIO")
-    private String codigoTipoIdentificacionCustodio;
+    private Integer codigoTipoIdentificacionCustodio;
 
     @Column(name = "CODIGO_IDENTIFICACION_CUSTODIO")
-    private String codigoIdentificacionCustodio;
+    private Integer codigoIdentificacionCustodio;
 
     public Integer getId() {
         return id;
@@ -239,17 +239,17 @@ public class L06Entity {
         this.codigoCalificadoraRiesgo = codigoCalificadoraRiesgo;
     }
 
-    public String getCodigoTipoIdentificacionCustodio(){
+    public Integer getCodigoTipoIdentificacionCustodio(){
         return codigoTipoIdentificacionCustodio;
     }
 
-    public  String getCodigoIdentificacionCustodio() {
+    public  Integer getCodigoIdentificacionCustodio() {
         return codigoIdentificacionCustodio;
     }
-    public void setCodigoTipoIdentificacionCustodio(String codigoTipoIdentificacionCustodio){
+    public void setCodigoTipoIdentificacionCustodio(Integer codigoTipoIdentificacionCustodio){
         this.codigoTipoIdentificacionCustodio = codigoTipoIdentificacionCustodio;
     }
-    public void setCodigoIdentificacionCustodio(String codigoIdentificacionCustodio){
+    public void setCodigoIdentificacionCustodio(Integer codigoIdentificacionCustodio){
         this.codigoIdentificacionCustodio = codigoIdentificacionCustodio;
     }
 }

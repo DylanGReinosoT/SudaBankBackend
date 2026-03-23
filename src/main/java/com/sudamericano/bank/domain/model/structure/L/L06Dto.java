@@ -1,7 +1,6 @@
 package com.sudamericano.bank.domain.model.structure.L;
 
 import java.math.BigDecimal;
-import java.security.PublicKey;
 import java.time.LocalDate;
 
 public class L06Dto {
@@ -28,8 +27,8 @@ public class L06Dto {
     private Integer codigoCategoriaCalificacion;
     private Integer codigoCalificacionRiesgo;
     private Integer codigoCalificadoraRiesgo;
-    private String codigoTipoIdentificacionCustodio;
-    private String codigoIdentificacionCustodio;
+    private Integer codigoTipoIdentificacionCustodio;
+    private Integer codigoIdentificacionCustodio;
 
 
     public Long getId() {
@@ -185,13 +184,13 @@ public class L06Dto {
     public void  setCodigoCalificadoraRiesgo(Integer codigoCalificadoraRiesgo){
         this.codigoCalificadoraRiesgo = codigoCalificadoraRiesgo;
     }
-    public String getCodigoTipoIdentificacionCustodio(){
+    public Integer getCodigoTipoIdentificacionCustodio(){
         return codigoTipoIdentificacionCustodio;
     }
-    public void setCodigoTipoIdentificacionCustodio(String codigoTipoIdentificacionCustodio){
+    public void setCodigoTipoIdentificacionCustodio(Integer codigoTipoIdentificacionCustodio){
         this.codigoTipoIdentificacionCustodio = codigoTipoIdentificacionCustodio;
     }
-    public String getCodigoIdentificacionCustodio(){
+    public Integer getCodigoIdentificacionCustodio(){
         return codigoIdentificacionCustodio;
     }
     public void setCodigoIdentificacionCustodio(){

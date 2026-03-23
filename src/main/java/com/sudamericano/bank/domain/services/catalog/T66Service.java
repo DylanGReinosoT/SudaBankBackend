@@ -19,4 +19,9 @@ public class T66Service implements T66UseCase {
     public List<T66Dto> findAll() {
         return port.findAll();
     }
+
+    public T66Dto findById(Integer id) {
+        return port.findById(id);
+    }
+
 }
