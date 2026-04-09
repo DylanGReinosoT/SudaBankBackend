@@ -6,7 +6,7 @@ public class L10Dto {
     private Integer id;
     private String codigoProducto;
     private Integer codigoBanda;
-    private String valorProductoBanda;
+    private BigDecimal valorProductoBanda;
 
     public Integer getId() {
         return id;
@@ -36,7 +36,7 @@ public class L10Dto {
         return valorProductoBanda;
     }
 
-    public void setValorProductoBanda(String valorProductoBanda) {
+    public void setValorProductoBanda(BigDecimal valorProductoBanda) {
         this.valorProductoBanda = valorProductoBanda;
     }
 }
